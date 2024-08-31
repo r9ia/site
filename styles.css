@@ -1,10 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
+body{
+    font-family: 'Segoe UI';
+    background-size: 100% 100%;
+}
+
+p{
+    font-family: 'Times New Roman';
+    margin: 10px;
+}
+
+.text{
+    border: 5px solid rgb(42, 164, 156);
 }
 
 h1 {
-    color: #333;
+    color: rgb(115, 253, 161);
+    font-size: 45px;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+h2{
+    font-size: 30px;
+    margin: 5px;
+}
+
+
+h3 
+{
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* This one will make them separate the maximum from each other */
 }
