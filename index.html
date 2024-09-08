@@ -5,7 +5,7 @@
         <meta charset="utf-8">
 
         <title>About Me - Georgia Wu</title>
-        <link rel="icon" type="image/x-icon" href="./golfih.png">
+        <link rel="icon" type="image/x-icon" href="images/godfish.png">
 
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
@@ -15,25 +15,27 @@
     <body>
 
         <header>
-            <div>
-            <h1> <b>Georgia Wu</b></h1>
+             <div>
+                 <img src="images\godfish.png" alt="Georgia's Goldfish Logo" style="width:70px;height:70px;margin-bottom:0px;">
+                 <h1> <b>G.Wu</b></h1>
+                  </div>
+        
+                 <div>
+                <h3> <a href="index.html"> Home </a> </h3>
+                <h3> <a href="projects.html"> Projects</a> </h3>
+                <h3> <a href="contact.html"> Contacts</a> </h3>
             </div>
-
-            <div>
-            <h3> About Me </h3>
-            <h3> <a href="chfghfg"> Projects</a> </h3>
-            <h3> <a href="chfghfg"> Contact</a> </h3>
-            </div> 
+            
 
         </header>
 
     <hr>
 
-    <h2> About Me </h2>
+    <h2 class ="fadeInUp-animation home"> Welcome! </h2>
+    <div class="content home fadeInUp-animation"> 
 
-    <div class="text"> 
-        <p> 
-        Hello, I’m a grade 12 student who got into programming after taking computer science in grade 10. With my newfound passion, I began to explore ways to apply my programming knowledge, primarily through personal projects. The purpose of this website is to showcase my projects as well as some information about me.
+    <p> 
+        I'm Georgia, a grade 12 student who got into programming after taking computer science in grade 10. With my newfound passion, I began to explore ways to apply my programming knowledge, primarily through personal projects. The purpose of this website is to showcase my projects as well as some information about me.
     </p> 
 
     <p> 
@@ -47,7 +49,46 @@
     <p>
         In the future, I aim to participate in more hackathons/game jams to gain coding and collaborative experience and continue pursuing my personal projects. 
     </p>
-    </div> 
+    </div>
+
+    <h2 class = "home" style="margin-top:2%;"> Activities and Academics</h2>
+    <div class="content home" style="width:50%;display: grid;grid-template-columns: 50% 50%"> 
+        <div>
+            <ul>
+            <li>AP Calculus</li>
+            <li>AP Literature</li>
+            <li>Concert Band</li>
+            <li>Sr. Girl's Volleyball</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Badminton Team</li>
+                <li>Tennis Team</li>
+                <li>General profiency in Java, Python, HTML and CSS</li>
+                <li>Library Learning Commons - VP</li>
+                </ul>
+
+        </div>
+    </div>
+        
+    </div>
+
+    <br>
+
+
+    <div id="footer">
+        <script>
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+    </div>
+
+
+
         
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>

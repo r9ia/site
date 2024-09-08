@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Projects - Georgia Wu</title>
+        <link rel="icon" type="image/x-icon" href="images/godfish.png">
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div>
+            <img src="images\godfish.png" alt="Georgia's Goldfish Logo" style="width:70px;height:70px;margin-bottom:0px;">
+            <h1> <b>G.Wu</b></h1>
+            </div>
+
+            <div style="float:right;">
+            <h3> <a href="index.html"> Home </a> </h3>
+            <h3> <a href="projects.html"> Projects</a> </h3>
+            <h3> <a href="contact.html"> Contacts</a> </h3>
+            </div> 
+
+        </header>
+        <hr>
+
+    <div class = "center">
+        <h2 class = "fadeInUp-animation">Projects</h2>
+        <p >This page is dedicated to all of my tech/coding projects (e.g. hackathon submissions, games I've made).
+            Click on the media in the 'Completed' Section to learn more.
+        </p>
+        <hr> 
+    </div>
+
+    <h4 class="center">In Progress</h4>
+    <div style="display: grid;grid-template-columns: 33% 33% 33%" > 
+        <div>
+            <h5>Island</h5>
+            <img src="images\the town.png" alt="a gif of my maze game made in Scratch." style="width:400px;height:400px;" > 
+            
+            <p>July 2024-Present</p>
+            <p>My first project with Gamemaker. A short game where you control the character pictured above and complete all 
+                of the tasks on the island. Inspired by UNDERTALE.
+            </p>
+        </div>
+    </div>
+    
+    <br>
+
+    <h4 class="center">Completed</h4>
+    <div style="display: grid;grid-template-columns: 33% 33% 33%" > 
+        <div>
+            <h5>Insurify</h5>
+            <a href ="https://devpost.com/software/insurify-edxf82"> 
+                <img src="images\Insurify.png" alt="a gif of my maze game made in Scratch." style="width:400px;height:400px;" > 
+            </a>
+            <p>August 2024</p>
+            <p>A mockup for an application that predicts medical costs, shortens the pre-authorization request process from insurance 
+                company to healthcare provider and increases peace-of-mind for the user. Submitted to Hacktivism Ideathon 2024.</p>
+        </div>
+        <div>
+            <h5>Anacritical</h5>
+            <a href ="https://github.com/r9ia/Anacritical"> 
+                <img src="images\Anacritical.png" alt="a screenshot of the terminal screen in Anacritical." style="width:400px;height:400px;" > 
+            </a>
+            <p>Aug 2023</p>
+            <p>A sports software that assists in keeping track of statistics and packages the data in a text file. Submitted to Ignition Hacks 2023.</p>
+        </div>
+
+        <div>
+            <h5>Maze Minigame</h5>
+            <a href ="https://scratch.mit.edu/projects/780447327/"> 
+                <img src="images\scratch maze minigame.gif" alt="a gif of my maze game made in Scratch." style="width:400px;height:400px;" > 
+            </a>
+            <p>Jan 2023</p>
+            <p>One of 2 minigames created for a project in TEJ2U0. When you complete a level in the Scratch game, you move forward on the physical board game (which has since been lost to time).</p>
+        </div>
+
+        
+    </div>
+    <br>
+
+    <div id="footer"></div>
+
+    </body>
+
+    <script>
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+</html>

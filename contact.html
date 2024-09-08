@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Contacts - Georgia Wu</title>
+        <link rel="icon" type="image/x-icon" href="images/godfish.png">
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body style="height: 70vh;">
+        <header>
+            <div>
+            <img src="images\godfish.png" alt="Georgia's Goldfish Logo" style="width:70px;height:70px;margin-bottom:0px;">
+            <h1> <b>G.Wu</b></h1>
+            </div>
+
+            <div>
+            <h3> <a href="index.html"> Home </a> </h3>
+            <h3> <a href="projects.html"> Projects</a> </h3>
+            <h3> <a href="contact.html"> Contacts</a> </h3>
+            </div> 
+        </header>
+
+        <h2 style="text-align: center;" class="fadeInUp-animation">Contacts</h2>
+        <div class="center contact">
+            <p>Feel free to contact/add me with the following links.</p>
+            <hr>
+            <a href = "https://www.linkedin.com/in/georgia-wu/" target = _blank>
+                <img class = "icon" src = "images\LinkedIn logo.png" alt = "A picture of the Linkedin Logo that leads to my Linkedin.">
+            </a>
+    
+            <a href = "https://github.com/r9ia" target = _blank>
+                <img class = "icon" src = "images\github.png" alt = "A picture of the Github Logo that leads to my Github." >
+            </a>
+    
+            <a href = "https://www.instagram.com/georgia.wmj/" target = _blank>
+                <img class = "icon" src = "images\Instagram_icon.png" alt = "A picture of the Instagram Logo that leads to my Instagram." >
+            </a>
+    
+            <a href = "https://devpost.com/by-georgia-wu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target = _blank></a>
+                <img class = "icon" src = "images\devpost.jpg" alt = "A picture of the Devpost Logo that leads to my Devpost." >
+            </a>
+    
+            <p> My main email: <a href="mailto:by.georgia.wu@gmail.com"> by.georgia.wu@gmail.com</a></p>
+        </div>   
+        
+
+    
+    <div  style="position:absolute;bottom: 0;width: 99vw">
+        <div id="footer"></div> 
+        <script>
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+    </div>
+
+    </body>
+</html>
